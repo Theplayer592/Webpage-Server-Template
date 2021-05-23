@@ -1,0 +1,22 @@
+#This is the file which polite/good robots/crawlers will look at to check if they are allowed to crawl/index this website
+
+User-agent: Googlebot
+Disallow: /Forbidden/
+
+User-agent: Bingbot
+Disallow: /Forbidden/
+
+User-agent: Slurp
+Disallow: /Forbidden/
+
+User-agent: DuckDuckBot
+Disallow: /Forbidden/
+
+User-agent: YandexBot
+Disallow: /Forbidden/
+
+User-agent: facebot
+Disallow: /Forbidden/
+
+User-agent: *
+Disallow: /

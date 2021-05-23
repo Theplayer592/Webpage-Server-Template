@@ -1,0 +1,38 @@
+//Example manifest.json
+/*
+What to replace:
+
+  * Replace the "name" with the name of the site/app
+
+  * Replace the "short_name" with a shorter version of the site/app name
+
+  * Replace "start_url" with the url of the page you first want viewers of your PWA to see
+
+  * Replace "icons" as appropriate
+
+  * "scope", "theme_color", "background_color" and "display" can generally be kept the same, but you can edit them if necessary
+*/
+
+{
+  "name": "App Name",
+  "short_name" : "Short",
+  "start_url": "https://webpage-server.theplayer592.repl.co",
+  "icons": [
+    {
+      "src": "https://apunkagamese.com/wp-content/uploads/2018/02/cropped-favicon-icon-1.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://apunkagamese.com/wp-content/uploads/2018/02/cropped-favicon-icon-1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "scope" : "./",
+  "theme_color": "#ffee00",
+  "background_color": "#ffee00",
+  "display": "standalone"
+}

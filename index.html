@@ -1,0 +1,107 @@
+<!--The main page-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Example head tag with common modules pre-imported-->
+    <title>Page Title</title>
+    <meta name="theme-color" content="white">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" 
+    content="This is an example of a meta description. This will often show up in search results.">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="https://apunkagamese.com/wp-content/uploads/2018/02/cropped-favicon-icon-1.png">
+    <link rel="apple-touch-icon" href="https://apunkagamese.com/wp-content/uploads/2018/02/cropped-favicon-icon-1.png">
+    <link rel="stylesheet" href="https://webpage-server.theplayer592.repl.co/Styles/indexStyle">
+    <link rel="manifest" href="https://webpage-server.theplayer592.repl.co/JSON/manifest">
+  </head>
+<body>
+
+<!--Note on best practices:
+
+  * Add the rel="noopener" to all links which have target="_blank"
+
+  * Be sure to have the lang attribute in the html tag at the top
+  
+  * And an "alt" to images
+
+Remember: DO NOT REMOVE THE SERVICE WORKER OR OTHER ITEMS THAT MAKE THIS A PWA. This is 100% necessary to make sure that apps can reach their full potential
+-->
+
+<!--I think this is quite a groovey header-->
+<header class="w3-container w3-theme w3-padding-64 w3-center">
+  <h1 class="w3-xxlarge w3-padding-16">Site Header</h1>
+</header>
+
+<noscript>
+  <!--Use to indicate to users that they should turn script on-->
+  <div class="w3-panel w3-pale-red">
+    <p><b>No-script Mode:</b> You have not activated Javascript. Some features may not be available.</p>
+  </div>
+</noscript>
+
+<!--This good for creating little notes-->
+<div class="w3-panel w3-pale-yellow">
+  <p>Note: A note.</p>
+</div>
+
+<!--An example styled paragraph-->
+<div class="w3-container">
+<p>
+This is a nice styled paragraph. Yay!
+</p>
+</div>
+
+<!--Good example of sectioning the website-->
+<div class="w3-container w3-padding-large w3-section w3-light-grey">
+  <h1 class="w3-xxxlarge">CSS</h1>
+  <p class="w3-xlarge">The Language for Styling Web Pages</p>
+  <a class="w3-button w3-theme w3-hover-white" href="https://www.w3schools.com/">LEARN CSS</a>
+  <a class="w3-button w3-theme w3-hover-white" href="https://www.w3schools.com/">CSS REFERENCE</a>
+  <p class="w3-large">
+  <p><div class="w3-code cssHigh notranslate">
+  body {<br>
+      background-color: #d0e4fe;<br>}<br>h1 {<br>
+      color: orange;<br>
+      text-align: center;<br>}<br>p {<br>
+      font-family: "Times New Roman";<br>
+      font-size: 20px;<br>}
+  </div>
+  <a class="w3-button w3-theme w3-hover-white" href="https://www.w3schools.com/" target="_blank" rel="noopener">Try it Yourself</a>
+</div>
+
+<!--A good, subtlety styled footer-->
+<footer class="w3-container w3-padding-large w3-light-grey w3-justify w3-opacity">
+  <p><nav>
+  <a href="https://www.w3schools.com/" target="_blank" rel="noopener">FORUM</a> |
+  <a href="https://www.w3schools.com/" target="_top">ABOUT</a>
+  </nav></p>
+</footer>
+
+</div>
+
+<!--Modules you might want to import-->
+<script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+<script>
+w3CodeColor();
+</script>
+<!--Service worker: DO NOT DELETE-->
+<script>
+  if ('serviceWorker' in navigator) {
+  // declaring scope manually
+  navigator.serviceWorker.register('https://webpage-server.theplayer592.repl.co/sw', {scope: '/'}).then(function(registration) {
+    console.log('Service worker registration succeeded:', registration);
+  }, /*catch*/ function(error) {
+    console.log('Service worker registration failed:', error);
+  });
+} else {
+  console.log('Service workers are not supported.');
+}
+</script>
+<!--Incase you want socket.io included (popular module)-->
+<script src="https://cdn.socket.io/4.0.1/socket.io.min.js" integrity="sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU" crossorigin="anonymous"></script>
+<!--How to import external scripts from this same server-->
+<script src="https://webpage-server.theplayer592.repl.co/Scripts/script.js"></script>
+</body>
+</html> 
